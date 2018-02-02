@@ -12,7 +12,8 @@ library project zlib is
 
    package Linker is
       --for Linker_Options use ("-Llib", "-lz");
-      for Linker_Options use ("-Llib", "-lz.dll");
+      --for Linker_Options use ("-Llib", "-lz.dll");
+      for Linker_Options use ("-Llib", "-lz");
    end Linker;
 
    package Builder is
